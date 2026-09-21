@@ -138,11 +138,11 @@
           },
           {
             "position": {
-              "x": 80,
-              "y": 230
+              "x": 70,
+              "y": 220
             },
             "size": {
-              "width": 112.5,
+              "width": 110,
               "height": 60
             },
             "attrs": {
@@ -256,7 +256,7 @@
           {
             "position": {
               "x": 80,
-              "y": 360
+              "y": 370
             },
             "size": {
               "width": 112.5,
@@ -418,8 +418,8 @@
                 "text": "Public Website"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -516,12 +516,34 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "651e9be6-883c-4f98-b552-f50651cf63d4",
+                  "title": "Expedition",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Tampering / Manipulación",
+                  "description": "See OWASP Automated Threat #6:\nUsing speed to violate explicit or implicit assumptions about the application’s normal use to achieve unfair individual gain",
+                  "mitigation": "Defences include providing enforcement of behavioral workflow and anti-automation",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 5,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 0,
+                "tampering": 1,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 0
+              }
             }
           },
           {
@@ -538,8 +560,8 @@
                 "text": "Authentication"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -636,12 +658,47 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "0a8cc59f-9c2e-4066-8620-167799c73e2c",
+                  "title": "Expedition",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Tampering / Manipulación",
+                  "description": "See OWASP Automated Threat #6:\nUsing speed to violate explicit or implicit assumptions about the application’s normal use to achieve unfair individual gain",
+                  "mitigation": "Defences include providing enforcement of behavioral workflow and anti-automation",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 3,
+                  "score": ""
+                },
+                {
+                  "id": "8a8b6e97-e01a-4220-bd49-f8e822409205",
+                  "title": "Vulnerability scanning",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Information disclosure / Brecha de información",
+                  "description": "See OWASP Automated Threat #14:\nSystematic enumeration and examination in order to find weaknesses and points where a security vulnerability might exist",
+                  "mitigation": "Defence includes providing anti-automation",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 4,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 0,
+                "tampering": 1,
+                "repudiation": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 0
+              }
             }
           },
           {
@@ -1560,6 +1617,21 @@
                 "button-remove",
                 "vertices",
                 "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
                 "target-arrowhead"
               ],
               "name": null
@@ -1713,8 +1785,8 @@
             ],
             "id": "dd1a8c5f-2640-46d8-917d-d929242ac6a9",
             "source": {
-              "x": 375,
-              "y": 420
+              "cell": "35607ebd-1202-4f54-a3f4-635758a2bc3d",
+              "port": "d4d1d11f-5d0a-486b-9e53-5338ee5cd9a9"
             },
             "target": {
               "cell": "4e58ebc2-e4e7-4ac6-a15c-2477b82b5bfe",
@@ -1723,11 +1795,59 @@
             "vertices": [
               {
                 "x": 270,
-                "y": 460
-              },
+                "y": 470
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Credentials",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Credentials"
+            ],
+            "id": "13e98127-96e7-4066-85af-ff8483df1106",
+            "source": {
+              "cell": "f7f28eb7-7267-4e70-a8d2-5c10810987e9",
+              "port": "842f46d5-543a-41dd-b312-7d517fb343d2"
+            },
+            "target": {
+              "cell": "8426334c-b534-4515-b909-4c6647cd6265",
+              "port": "d4d1d11f-5d0a-486b-9e53-5338ee5cd9a9"
+            },
+            "vertices": [
               {
-                "x": 240,
-                "y": 440
+                "x": 350,
+                "y": 240
               }
             ]
           },
@@ -1903,30 +2023,15 @@
             "vertices": [
               {
                 "x": 290,
-                "y": 380
+                "y": 390
               }
-            ],
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead"
-              ],
-              "name": null
-            }
+            ]
           }
         ]
       }
     ],
     "diagramTop": 1,
     "reviewer": "",
-    "threatTop": 2
+    "threatTop": 5
   }
 }
